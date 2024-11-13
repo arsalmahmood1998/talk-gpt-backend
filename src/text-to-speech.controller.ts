@@ -36,7 +36,6 @@ export class TextToSpeechController {
   async synthesize(@Body('text') text: string, @Res() res: Response) {
     try {
       const gptResponse = await this.chatService.chatWithGPT(text);
-      
       const request = {
         input: { text: gptResponse },
         voice: {
