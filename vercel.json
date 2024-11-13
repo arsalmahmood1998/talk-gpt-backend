@@ -1,6 +1,3 @@
 {
-  "builds": [{ "src": "dist/main.js", "use": "@vercel/node" }],
-  "scripts": {
-    "build": "nest start dev"
-  }
+  "builds": [{ "src": "dist/main.js", "use": "@vercel/node" }]
 }
